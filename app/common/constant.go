@@ -101,16 +101,16 @@ const ( // congfig params
 	CACHE_DOMAIN = "localhost"
 	//CACHE_DOMAIN = "redis"
 
-	// PRIVATE_KEY_FILEPATH = "/Users/lionheart/.ssh/appKey.priv"
-	// SSL_CERT_FILEPATH    = "/Users/lionheart/.ssh/ssl.crt"
-	// SSL_KEY_FILEPATH     = "/Users/lionheart/.ssh/sslKey.key"
+	PRIVATE_KEY_FILEPATH = "/Users/lionheart/.ssh/appKey.priv"
+	SSL_CERT_FILEPATH    = "/Users/lionheart/.ssh/ssl.crt"
+	SSL_KEY_FILEPATH     = "/Users/lionheart/.ssh/sslKey.key"
 
-	PRIVATE_KEY_FILEPATH = "/var/lib/intelliq/.ssh/appKey.priv"
-	SSL_CERT_FILEPATH    = "/var/lib/intelliq/.ssh/ssl.crt"
-	SSL_KEY_FILEPATH     = "/var/lib/intelliq/.ssh/sslKey.key"
+	// PRIVATE_KEY_FILEPATH = "/var/lib/intelliq/.ssh/appKey.priv"
+	// SSL_CERT_FILEPATH    = "/var/lib/intelliq/.ssh/ssl.crt"
+	// SSL_KEY_FILEPATH     = "/var/lib/intelliq/.ssh/sslKey.key"
 
-	LOG_FILE = "/var/log/intelliq/intelliq.log"
-	//LOG_FILE         = "/Users/lionheart/log/intelliq/intelliq.log"
+	//LOG_FILE = "/var/log/intelliq/intelliq.log"
+	LOG_FILE         = "/Users/lionheart/log/intelliq/intelliq.log"
 	LOG_MAX_BYTES    = 1000000
 	LOG_BACKUP_COUNT = 20
 )

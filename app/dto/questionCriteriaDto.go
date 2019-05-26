@@ -2,6 +2,7 @@ package dto
 
 import (
 	"intelliq/app/enums"
+	"strings"
 )
 
 //QuestionCriteriaDto criteria for generating question paper
@@ -40,5 +41,15 @@ func (criteria *QuestionCriteriaDto) GenerateNatives() {
 	}
 	for _, difficulty := range criteria.Difficulty {
 		criteria.NativeDifficulty = append(criteria.NativeDifficulty, difficulty.Level)
+	}
+	if criteria.Tags != nil && len(criteria.Tags) > 0 {
+		var tags []string
+		for _, tag := range criteria.Tags {
+			tag := strings.TrimSpace(tag)
+			if len(tag) > 0 {
+				tags = append(tags, strings.Title(strings.ToLower(tag)))
+			}
+		}
+		criteria.Tags = tags
 	}
 }
